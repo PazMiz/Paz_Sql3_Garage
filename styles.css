@@ -1,0 +1,77 @@
+/* Set the background color and font family for the entire page */
+body {
+    background-color: #d95959;
+    font-family: Arial, sans-serif;
+}
+
+/* Style the links */
+a {
+    color: blue;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+a:hover {
+    color: #555;
+}
+
+a.chocolate {
+    color: chocolate;
+}
+
+/* Set the max width and center the content */
+#content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Style the footer */
+#footer {
+    background-color: #f43e0c;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+#footer a {
+    color: #fff;
+}
+
+#footer a:hover {
+    color: #ccc;
+}
+
+.btn-blue {
+    background-color: #0074D9;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.btn-chocolate {
+    background-color: #D2691E;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.btn-blue a,
+.btn-chocolate a {
+    color: white;
+    text-decoration: none;
+}
+
+.btn-blue:hover,
+.btn-chocolate:hover {
+    cursor: pointer;
+}
+
+.btn-blue:focus,
+.btn-chocolate:focus {
+    outline: none;
+}

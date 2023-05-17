@@ -1,0 +1,36 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<table class="table">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Client Name</th>
+            <th>Car Name</th>
+            <th>Model</th>
+            <th>Fix</th>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for row in msg %}
+        <tr>
+            <td>{{ row[0] }}</td>
+            <td>{{ row[1] }}</td>
+            <td>{{ row[2] }}</td>
+            <td>{{ row[3] }}</td>
+            <td>{{ row[4] }}</td>
+            <td><a href="/updatecar/{{ row[0] }}" class="btn btn-primary">Update</a></td>
+            <td>
+                <form method="post" action="/deletecar/{{ row[0] }}"
+                    onsubmit="return confirm('Are you sure you want to delete this record?');">
+                    <input type="hidden" name="_method" value="DELETE">
+                    <button type="submit" class="btn btn-danger">Delete</button>
+                </form>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

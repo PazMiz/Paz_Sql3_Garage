@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Delete Car</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        form {
+            display: inline-block; /* keep form elements in a row */
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Delete Car</h1>
+    </header>
+    <main>
+        <form method="post" action="delete_car.php">
+            <label for="make">Car make:</label>
+            <input type="text" id="make" name="make">
+            <label for="model">Car model:</label>
+            <input type="text" id="model" name="model">
+            <input type="submit" value="Delete">
+        </form>
+    </main>
+</body>
+</html>

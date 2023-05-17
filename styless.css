@@ -1,0 +1,68 @@
+/* Set the background color and font family for the entire page */
+body {
+    background-color: #f1f1f1;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Add some padding to the container */
+  .container {
+    padding: 20px;
+  }
+  
+  /* Style the heading */
+  h1 {
+    color: #c26262;
+    text-align: center;
+  }
+  
+  /* Style the labels and form inputs */
+  label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #a93f3f;
+  }
+  
+  input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+  }
+  
+  /* Style the submit button */
+  .button {
+    background-color: #ed6b6b;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .button:hover {
+    background-color: #d16868;
+  }
+
+  h1 {
+    font-family: Arial, sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-top: 20px;
+  }
+  
+  h1:first-of-type {
+    margin-top: 0; /* Remove the top margin from the first h1 element to avoid spacing issues*/
+  }
+  
+  h1:nth-of-type(odd) {
+    color: navy; /* Change the color of every odd heading to navy */
+  }
+  
+  h1:nth-of-type(even) {
+    color: maroon; /* Change the color of every even heading to maroon */
+  }

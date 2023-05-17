@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Add New Car</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styless.css') }}"><title>
+    {% block title %}{% endblock %} - My Webpage</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Add New Car</h1>
+    <form action="/newcar" method="post">
+      <label for="ClientName">Client Name</label>
+      <input type="text" id="ClientName" name="ClientName" required>
+
+      <br>
+
+      <label for="carName">Car Name</label>
+      <input type="text" id="carName" name="carName" required>
+
+      <br>
+
+      <label for="Model">Model</label>
+      <input type="text" id="Model" name="Model" required>
+
+      <br>
+
+      <label for="Fix">Fix</label>
+      <input type="text" id="Fix" name="Fix" required>
+
+      <br>
+
+      <button type="submit" class="button">Add Car</button>
+        <a href="http://127.0.0.1:5000/">Get Back</a>
+    </form>
+  </div>
+</body>
+
+</html>

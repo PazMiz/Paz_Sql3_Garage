@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<link rel="stylesheet" href="{{ url_for('static', filename='update.css') }}"><title>{% block title %}{% endblock %} - My Webpage</title>
+
+<form method="post">
+  <div>
+    <label for="ClientName">Client Name:</label>
+    <input type="text" name="ClientName" value="{{ record[0] }}">
+  </div>
+  <div>
+    <label for="carName">Car Name:</label>
+    <input type="text" name="carName" value="{{ record[1] }}">
+  </div>
+  <div>
+    <label for="Model">Model:</label>
+    <input type="text" name="Model" value="{{ record[2] }}">
+  </div>
+  <div>
+    <label for="Fix">Fix:</label>
+    <input type="text" name="Fix" value="{{ record[3] }}">
+  </div>
+  <button type="submit">Update record</button>
+</form>
+
+{% endblock %}
